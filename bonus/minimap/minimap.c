@@ -124,8 +124,6 @@ static inline void
 */
 void	draw_minimap(t_game *game, t_ray *rays)
 {
-	int		x;
-	int		y;
 	t_shape	shape;
 	int		starty;
 	int		startx;
@@ -133,8 +131,6 @@ void	draw_minimap(t_game *game, t_ray *rays)
 	if (!game->minimap_drawable)
 		return ;
 	shape.x = 0;
-	x = 0;
-	y = 0;
 	shape.width = MINISIDE;
 	shape.height = MINISIDE;
 	starty = game->scr.w - (game->map_w * MINISIDE + MINIPAD);
