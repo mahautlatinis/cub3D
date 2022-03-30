@@ -1,5 +1,6 @@
 # cub3d 📚
-Wolfeilstein 3D Game
+Cub3D - 2022 (Common Core).
+This project is inspired by a world famous game using Raycasting. The aim is to do a dynamic view in a maze.
 
 - Actual Status : validated.
 - Result        : 115% (validated 28/08/2022)
