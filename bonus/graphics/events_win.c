@@ -22,7 +22,7 @@ static inline bool	player_moving(t_player *p)
 		return (true);
 	}
 	return (p->move_no || p->move_so || p->move_we || p->move_ea
-		|| p->rotate_l || p->rotate_r || p->mouse_rotating);
+		|| p->rotate_l || p->rotate_r /*|| p->mouse_rotating*/);
 }
 
 static inline void	update_player(t_game *game)
@@ -39,8 +39,8 @@ static inline void	update_player(t_game *game)
 		player_move(game, SPEED_MOV, -M_PI_2);
 	if (game->p.move_ea)
 		player_move(game, SPEED_MOV, M_PI_2);
-	if (game->p.mouse_rotating)
-		game->p.mouse_rotating = false;
+	// if (game->p.mouse_rotating)
+	// 	game->p.mouse_rotating = false;
 }
 
 int	on_loop(t_game *game)

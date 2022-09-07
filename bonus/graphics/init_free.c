@@ -30,7 +30,7 @@ static inline void	hook_events(t_game *game)
 	mlx_hook(game->win, 17, 0L, on_destroy_win, game);
 	mlx_hook(game->win, 02, 1L << 0, on_key_press, game);
 	mlx_hook(game->win, 03, 1L << 1, on_key_release, game);
-	mlx_hook(game->win, 06, 1L << 6, on_mouse_move, game);
+	// mlx_hook(game->win, 06, 1L << 6, on_mouse_move, game);
 }
 
 char	*init_graphics(t_cub_data *cub, t_game *game)

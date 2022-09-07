@@ -1,4 +1,7 @@
 # cub3d 📚
+
+![](cub3d.gif)
+
 Cub3D - 2022 (Common Core).
 This project is inspired by a world famous game using Raycasting. The aim is to do a dynamic view in a maze.
 

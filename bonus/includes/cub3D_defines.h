@@ -13,8 +13,8 @@
 #ifndef CUB3D_DEFINES_H
 # define CUB3D_DEFINES_H
 
-# define WIN_X		1200
-# define WIN_Y		900
+# define WIN_X		900
+# define WIN_Y		700
 # define WIN_TITLE	"Awesome cub3D"
 
 # define M_PI_PI	6.28318530717958647692
