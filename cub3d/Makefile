@@ -44,7 +44,7 @@ BONUS_COMMONS	= 	cub_parser/cub_data.c \
 					main.c \
 					misc.c
 
-MLX_DIR		=	mlx_mac
+MLX_DIR		=	../mlx_mac
 MLX_FLAGS	=	-framework OpenGL -framework AppKit
 BONUS_NAMES =	$(BONUS_COMMONS) graphics/events_mouse_mac.c
 

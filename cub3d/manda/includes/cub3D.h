@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3D.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qdam <qdam@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: mahautlatinis <mahautlatinis@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/21 19:55:53 by qdam              #+#    #+#             */
-/*   Updated: 2021/09/08 15:32:01 by qdam             ###   ########.fr       */
+/*   Updated: 2023/10/03 21:57:27 by mahautlatin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,17 +27,10 @@
 # include "cub3D_graphics.h"
 # include "cub3D_raycasting.h"
 
-# ifdef __linux__
-#  include "mlx_linux.h"
-#  define USING_LINUX	1
-
-# else
-#  include "mlx_mac.h"
-#  define USING_LINUX	0
+# include "../../../mlx_mac/mlx.h"
+# define USING_LINUX	0
 
 int		mlx_destroy_display(void *mlx_ptr);
-
-# endif
 
 /*	==== MISC FUNCTIONS ==== */
 

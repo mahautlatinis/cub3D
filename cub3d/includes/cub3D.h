@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3D.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qdam <qdam@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: mahautlatinis <mahautlatinis@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/21 19:55:53 by qdam              #+#    #+#             */
-/*   Updated: 2021/08/25 09:31:09 by qdam             ###   ########.fr       */
+/*   Updated: 2023/10/03 21:57:16 by mahautlatin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,9 @@
 # include <stdio.h>
 # include <errno.h>
 # include "libft.h"
-# include "mlx.h"
+# include "../../mlx_mac/mlx.h"
 # include "cub3D_errors.h"
 
-/*	==== DATA STRUCTURE ==== */
 typedef struct s_cub_data
 {
 	char	*no;
@@ -77,8 +76,5 @@ char	**make_char_map(t_list *raw_map);
 
 // Check the map inside CUB file then returns an error message if any, else NULL
 char	*check_cub_map(char **map);
-
-
-void	debug_cub_data(t_cub_data *cub);
 
 #endif

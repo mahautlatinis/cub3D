@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   utils0.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malatini <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mahautlatinis <mahautlatinis@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/09 17:25:54 by malatini          #+#    #+#             */
-/*   Updated: 2021/04/09 17:25:56 by malatini         ###   ########.fr       */
+/*   Updated: 2023/10/03 21:42:46 by mahautlatin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@ char	*ft_strdup(const char *s1)
 	i = 0;
 	while (s1[i])
 		i++;
-	if (!(cpy = (char *)malloc(sizeof(char) * (i + 1))))
+	cpy = (char *)malloc(sizeof(char) * (i + 1));
+	if (!cpy)
 		return (NULL);
 	i = 0;
 	while (s1[i])

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   init_free.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qdam <qdam@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: mahautlatinis <mahautlatinis@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/30 22:54:23 by qdam              #+#    #+#             */
-/*   Updated: 2021/10/09 02:06:48 by qdam             ###   ########.fr       */
+/*   Updated: 2023/10/03 21:58:27 by mahautlatin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ static inline void	hook_events(t_game *game)
 	mlx_hook(game->win, 17, 0L, on_destroy_win, game);
 	mlx_hook(game->win, 02, 1L << 0, on_key_press, game);
 	mlx_hook(game->win, 03, 1L << 1, on_key_release, game);
-	// mlx_hook(game->win, 06, 1L << 6, on_mouse_move, game);
 }
 
 char	*init_graphics(t_cub_data *cub, t_game *game)

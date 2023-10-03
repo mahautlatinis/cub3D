@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   events_win.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qdam <qdam@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: mahautlatinis <mahautlatinis@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/01 19:23:49 by qdam              #+#    #+#             */
-/*   Updated: 2021/10/09 02:05:37 by qdam             ###   ########.fr       */
+/*   Updated: 2023/10/03 21:42:14 by mahautlatin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,6 @@ static inline void	update_player(t_game *game)
 		player_move(game, SPEED_MOV, -M_PI_2);
 	if (game->p.move_ea)
 		player_move(game, SPEED_MOV, M_PI_2);
-	// if (game->p.mouse_rotating)
-	// 	game->p.mouse_rotating = false;
 }
 
 int	on_loop(t_game *game)

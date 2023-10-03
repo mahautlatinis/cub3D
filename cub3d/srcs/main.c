@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qdam <qdam@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: mahautlatinis <mahautlatinis@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/21 20:37:00 by qdam              #+#    #+#             */
-/*   Updated: 2021/08/25 09:03:36 by qdam             ###   ########.fr       */
+/*   Updated: 2023/10/03 21:45:10 by mahautlatin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,12 +40,6 @@ void	error_then_exit(char *fname, char *msg)
 	exit(1);
 }
 
-void	debug_cub_data(t_cub_data *cub)
-{
-	/////////////
-	printf("no: %s\nso: %s\nwe: %s\nea: %s\n", cub->no, cub->so, cub->we, cub->ea);
-}
-
 int	main(int ac, char **av)
 {
 	t_cub_data	cub;
@@ -63,7 +57,6 @@ int	main(int ac, char **av)
 	parse_error = parse_cub(&cub, fd);
 	if (parse_error && close(fd) <= 0)
 		error_then_exit(av[1], parse_error);
-	//////
 	close(fd);
 	free_cub_data(&cub);
 	puts("Everything good");
