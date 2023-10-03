@@ -44,15 +44,9 @@ BONUS_COMMONS	= 	cub_parser/cub_data.c \
 					main.c \
 					misc.c
 
-ifeq ($(shell uname), Darwin)
 MLX_DIR		=	mlx_mac
 MLX_FLAGS	=	-framework OpenGL -framework AppKit
 BONUS_NAMES =	$(BONUS_COMMONS) graphics/events_mouse_mac.c
-else
-MLX_DIR		=	mlx_linux
-MLX_FLAGS	=	-lX11 -lXext -lm
-BONUS_NAMES =	$(BONUS_COMMONS) graphics/events_mouse_linux.c
-endif
 
 LIB_FLAGS	= -L ${LIBFT_DIR} ${MLX_FLAGS} -lft -L ${MLX_DIR} -lmlx
 
