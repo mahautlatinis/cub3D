@@ -8,7 +8,7 @@ on:
 
 jobs:
   norminette_job:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     name: norminette
     steps:
     - uses: actions/checkout@v2
