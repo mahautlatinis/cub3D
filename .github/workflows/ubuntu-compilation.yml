@@ -14,5 +14,5 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: ubuntu tests
-      run: cd cud3d; make
+      run: cd cub3d; make
       shell: bash
