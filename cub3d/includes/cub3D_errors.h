@@ -6,7 +6,7 @@
 /*   By: mahautlatinis <mahautlatinis@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/25 09:30:09 by qdam              #+#    #+#             */
-/*   Updated: 2023/10/03 21:38:20 by mahautlatin      ###   ########.fr       */
+/*   Updated: 2023/10/03 22:16:33 by mahautlatin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 /*	==== LAUNCH MESSAGES ==== */
 # define ARG_ERROR		"Must have a .cub file as argument"
 # define NAME_ERROR		"A .cub file is required"
-# define READ_ERROR		"File cannot be opened or is empty"
+# define READ_ERROR		"\033[0;31mFile cannot be opened or is empty\033[0m"
 # define UNKN_ERROR		"Unknown error"
 
 /*	==== PARSER MESSAGES ==== */

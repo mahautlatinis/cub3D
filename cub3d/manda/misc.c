@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   misc.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qdam <qdam@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: mahautlatinis <mahautlatinis@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/30 18:24:36 by qdam              #+#    #+#             */
-/*   Updated: 2021/10/09 01:53:25 by qdam             ###   ########.fr       */
+/*   Updated: 2023/10/03 22:16:44 by mahautlatin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,5 +65,5 @@ void	error_then_exit(char *fname, char *msg)
 	else
 		ft_putstr_fd(UNKN_ERROR, STDERR_FILENO);
 	ft_putchar_fd('\n', STDERR_FILENO);
-	exit(1);
+	exit(0);
 }

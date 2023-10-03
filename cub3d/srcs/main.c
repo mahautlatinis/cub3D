@@ -6,7 +6,7 @@
 /*   By: mahautlatinis <mahautlatinis@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/21 20:37:00 by qdam              #+#    #+#             */
-/*   Updated: 2023/10/03 21:45:10 by mahautlatin      ###   ########.fr       */
+/*   Updated: 2023/10/03 22:16:53 by mahautlatin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	error_then_exit(char *fname, char *msg)
 	else
 		ft_putstr_fd(UNKN_ERROR, STDERR_FILENO);
 	ft_putchar_fd('\n', STDERR_FILENO);
-	exit(1);
+	exit(0);
 }
 
 int	main(int ac, char **av)
