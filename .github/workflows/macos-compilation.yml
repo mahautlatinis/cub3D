@@ -14,5 +14,5 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: mandatory tests
-      run: cd ./cud3d; make
+      run: cd cud3d; make
       shell: bash
