@@ -14,5 +14,5 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: mandatory tests
-      run: cd cub3d; make
+      run: cd cub3d; make; ./cub3D maps/doesnotexist.cub
       shell: bash
