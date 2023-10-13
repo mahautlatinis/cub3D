@@ -6,7 +6,7 @@
 /*   By: mahautlatinis <mahautlatinis@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/30 18:24:36 by qdam              #+#    #+#             */
-/*   Updated: 2023/10/03 22:16:44 by mahautlatin      ###   ########.fr       */
+/*   Updated: 2023/10/13 17:35:04 by mahautlatin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ void	free_tab(char **tab)
 	while (tab[i])
 		free(tab[i++]);
 	free(tab);
+	return ;
 }
 
 void	error_then_exit(char *fname, char *msg)

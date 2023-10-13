@@ -6,7 +6,7 @@
 /*   By: mahautlatinis <mahautlatinis@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/08 15:17:42 by qdam              #+#    #+#             */
-/*   Updated: 2023/10/03 22:07:50 by mahautlatin      ###   ########.fr       */
+/*   Updated: 2023/10/13 17:27:30 by mahautlatin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,12 +33,12 @@
 # define KEY_S		1
 # define KEY_D		2
 
-# define SAND 0xF7E9DB
-# define RED 0xBB4211
+# define SAND       0xF7E9DB
+# define RED        0xBB4211
 # define RUSSIANRED 0xde300b
-# define BROWN 0x54310F
-# define CHOCO 0x351C04
-# define MINISIDE 10
-# define MINIPAD 16
+# define BROWN      0x54310F
+# define CHOCO      0x351C04
+# define MINISIDE   10
+# define MINIPAD    16
 
 #endif

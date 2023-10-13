@@ -3,18 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   cub_parser.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qdam <qdam@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: mahautlatinis <mahautlatinis@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/21 23:15:38 by qdam              #+#    #+#             */
-/*   Updated: 2021/10/09 01:55:29 by qdam             ###   ########.fr       */
+/*   Updated: 2023/10/13 17:17:05 by mahautlatin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/cub3D.h"
-
-char	*parse_cub_line_texture(t_cub_data *cub, char *line);
-char	*parse_cub_line_color(t_cub_data *cub, char **tab);
-char	*parse_cub_line_map(t_cub_data *cub, char *line);
 
 static inline char	*parse_cub_line(t_cub_data *cub, char *line)
 {

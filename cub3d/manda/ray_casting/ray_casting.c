@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ray_casting.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qdam <qdam@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: mahautlatinis <mahautlatinis@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/03 00:44:39 by qdam              #+#    #+#             */
-/*   Updated: 2021/10/09 01:55:29 by qdam             ###   ########.fr       */
+/*   Updated: 2023/10/13 17:45:49 by mahautlatin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ static inline void	init_rays(t_ray *rays, bool *done_init_rays)
 		rays[i].draw_height = 0;
 	}
 	*done_init_rays = true;
+	return ;
 }
 
 void	ray_casting(t_game *game, t_ray *rays)
@@ -44,4 +45,5 @@ void	ray_casting(t_game *game, t_ray *rays)
 		rays[i].angle_abs = game->p.dir + rays[i].angle_rel;
 		calculate_ray(game, &rays[i]);
 	}
+	return ;
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   calculate.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qdam <qdam@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: mahautlatinis <mahautlatinis@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/04 15:02:37 by qdam              #+#    #+#             */
-/*   Updated: 2021/10/09 01:55:29 by qdam             ###   ########.fr       */
+/*   Updated: 2023/10/13 17:33:48 by mahautlatin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,4 +85,5 @@ void	calculate_ray(t_game *game, t_ray *ray)
 		ray->wall_dir = (no_or_we) * WE + (!no_or_we) * EA;
 		ft_memcpy(&ray->end, &end_v, sizeof(t_vector));
 	}
+	return ;
 }

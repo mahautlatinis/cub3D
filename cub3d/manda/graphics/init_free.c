@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   init_free.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qdam <qdam@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: mahautlatinis <mahautlatinis@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/30 22:54:23 by qdam              #+#    #+#             */
-/*   Updated: 2021/10/09 01:55:29 by qdam             ###   ########.fr       */
+/*   Updated: 2023/10/13 17:41:29 by mahautlatin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,4 +64,5 @@ void	destroy_graphics(t_game *game)
 		mlx_destroy_display(game->ptr);
 		free(game->ptr);
 	}
+	return ;
 }

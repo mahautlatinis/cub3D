@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   draw.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qdam <qdam@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: mahautlatinis <mahautlatinis@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/05 19:05:34 by qdam              #+#    #+#             */
-/*   Updated: 2021/10/09 01:55:29 by qdam             ###   ########.fr       */
+/*   Updated: 2023/10/13 17:41:02 by mahautlatin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ static inline void
 		while (++dx < WIN_X / N_RAYS)
 			put_px(start_x + dx, start_y + dy, get_px(tx, ty, img), &game->scr);
 	}
+	return ;
 }
 
 static inline void
@@ -62,6 +63,7 @@ static inline void
 		while (++dx < WIN_X / N_RAYS)
 			put_px(start_x + dx, start_y + dy, get_px(tx, ty, img), &game->scr);
 	}
+	return ;
 }
 
 static inline void
@@ -71,6 +73,7 @@ static inline void
 		draw_wall_ns(game, ray, start_x, start_y);
 	else
 		draw_wall_we(game, ray, start_x, start_y);
+	return ;
 }
 
 void	draw_screen(t_game *game, t_ray *rays)
@@ -99,4 +102,5 @@ void	draw_screen(t_game *game, t_ray *rays)
 		}
 		draw_wall(game, &rays[i], i * (WIN_X / N_RAYS), y);
 	}
+	return ;
 }
