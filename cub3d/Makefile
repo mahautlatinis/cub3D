@@ -1,6 +1,7 @@
 LIBFT_DIR	=	libft
 
-MANDA_DIR	=	manda
+MANDA_DIR	=	srcs
+
 MANDA_INC	=	${MANDA_DIR}/includes
 MANDA_NAMES	=	cub_parser/cub_data.c \
 				cub_parser/cub_parser.c \
@@ -60,7 +61,7 @@ BONUS_NAME	= cub3D_bonus
 
 CC			= clang
 CFLAGS		= -Wall -Wextra -Werror
-RM			= rm -f
+RM			= rm -rf
 
 .c.o:
 			${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
