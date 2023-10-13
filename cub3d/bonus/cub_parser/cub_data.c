@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub_data.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qdam <qdam@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: mahautlatinis <mahautlatinis@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/23 19:01:33 by qdam              #+#    #+#             */
-/*   Updated: 2021/10/09 01:55:29 by qdam             ###   ########.fr       */
+/*   Updated: 2023/10/13 17:15:59 by mahautlatin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ void	init_cub_data(t_cub_data *cub)
 	cub->c_g = -1;
 	cub->c_b = -1;
 	cub->raw_map = NULL;
+	return ;
 }
 
 void	free_cub_data(t_cub_data *cub)
@@ -40,4 +41,5 @@ void	free_cub_data(t_cub_data *cub)
 	if (cub->ea)
 		free(cub->ea);
 	ft_lstclear(&cub->raw_map, free);
+	return ;
 }

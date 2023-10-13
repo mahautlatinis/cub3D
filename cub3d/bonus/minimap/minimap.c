@@ -3,24 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   minimap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qdam <qdam@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: mahautlatinis <mahautlatinis@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/04 17:55:03 by malatini          #+#    #+#             */
-/*   Updated: 2021/10/09 02:15:13 by qdam             ###   ########.fr       */
+/*   Updated: 2023/10/13 17:33:31 by mahautlatin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/cub3D.h"
 
-void	rect(t_img *img, t_shape shape, int color);
-void	my_mlx_pixel_put(t_img *data, int x, int y, int color);
-void	draw_line(t_img *img, t_vector s, t_vector e, double angle);
-void	circle(t_img *img, t_shape s, int color);
-
-/*
-** Dessine le sol (beige clair) de la minimap
-* @author: malatini
-*/
 static inline void
 	draw_minimap_floor(t_game *game, int sx, int sy, t_shape shape)
 {
@@ -44,12 +35,9 @@ static inline void
 		}
 		y++;
 	}
+	return ;
 }
 
-/*
-** Va permettre de dessiner tous les rayons du raycasting sur la minimap
-* @author: malatini
-*/
 static inline void	draw_mini_raycast(t_game *g, t_ray *rays, int sx, int sy)
 {
 	t_vector	render;
@@ -66,12 +54,9 @@ static inline void	draw_mini_raycast(t_game *g, t_ray *rays, int sx, int sy)
 		draw_line(&g->scr, render, renderend, rays[j].angle_abs);
 		j++;
 	}
+	return ;
 }
 
-/*
-** Permet d'afficher les murs de la minimap
-* @author: malatini
-*/
 static inline void
 	draw_walls_minimap(t_game *game, int sx, int sy, t_shape shape)
 {
@@ -97,12 +82,9 @@ static inline void
 		}
 		y++;
 	}
+	return ;
 }
 
-/*
-** Va permettre d'afficher le player sur la minimap (rond rouge avec contour)
-* @author: malatini
-*/
 static inline void
 	draw_player_minimap(t_game *game, t_shape s, int sx, int sy)
 {
@@ -116,12 +98,9 @@ static inline void
 	s.x = (int)(game->p.pos.y * MINISIDE + sx - s.width / 2);
 	s.y = (int)(game->p.pos.x * MINISIDE + sy - s.height / 2);
 	circle(&game->scr, s, 0xF97A6D);
+	return ;
 }
 
-/*
-** Permet de dessiner la minimap (a jour) sur l'image
-* @author: malatini
-*/
 void	draw_minimap(t_game *game, t_ray *rays)
 {
 	t_shape	shape;
@@ -139,4 +118,5 @@ void	draw_minimap(t_game *game, t_ray *rays)
 	draw_mini_raycast(game, rays, startx, starty);
 	draw_walls_minimap(game, startx, starty, shape);
 	draw_player_minimap(game, shape, startx, starty);
+	return ;
 }

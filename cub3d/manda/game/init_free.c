@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   init_free.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qdam <qdam@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: mahautlatinis <mahautlatinis@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/30 22:03:48 by qdam              #+#    #+#             */
-/*   Updated: 2021/10/09 01:55:29 by qdam             ###   ########.fr       */
+/*   Updated: 2023/10/13 17:40:19 by mahautlatin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ static inline void	set_player_initial_pos(t_game *game)
 	else
 		game->p.dir = 0.5 * M_PI;
 	game->map[y][x] = '0';
+	return ;
 }
 
 char	*init_game(t_cub_data *cub, t_game *game)
@@ -59,4 +60,5 @@ void	destroy_game(t_game *game, bool quit)
 	destroy_graphics(game);
 	if (quit)
 		exit(0);
+	return ;
 }

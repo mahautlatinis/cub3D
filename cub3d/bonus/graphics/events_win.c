@@ -6,7 +6,7 @@
 /*   By: mahautlatinis <mahautlatinis@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/01 19:23:49 by qdam              #+#    #+#             */
-/*   Updated: 2023/10/03 21:42:14 by mahautlatin      ###   ########.fr       */
+/*   Updated: 2023/10/13 17:18:38 by mahautlatin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ static inline void	update_player(t_game *game)
 		player_move(game, SPEED_MOV, -M_PI_2);
 	if (game->p.move_ea)
 		player_move(game, SPEED_MOV, M_PI_2);
+	return ;
 }
 
 int	on_loop(t_game *game)

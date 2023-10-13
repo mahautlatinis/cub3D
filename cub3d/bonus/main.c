@@ -6,13 +6,12 @@
 /*   By: mahautlatinis <mahautlatinis@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/21 20:37:00 by qdam              #+#    #+#             */
-/*   Updated: 2023/10/03 22:15:38 by mahautlatin      ###   ########.fr       */
+/*   Updated: 2023/10/13 17:34:20 by mahautlatin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/cub3D.h"
 
-// Initial checks for program's arguments. If invalid then quit directly
 static inline void	initial_arg_checks(int ac, char **av)
 {
 	if (ac != 2)
@@ -21,6 +20,7 @@ static inline void	initial_arg_checks(int ac, char **av)
 		error_then_exit(av[1], NAME_ERROR);
 	if (!can_read_file(av[1]))
 		error_then_exit(av[1], READ_ERROR);
+	return ;
 }
 
 // Launch parser for the .cub file provided by fname and write parsed data

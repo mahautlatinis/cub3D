@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   image_handlers.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qdam <qdam@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: mahautlatinis <mahautlatinis@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/03 00:39:54 by qdam              #+#    #+#             */
-/*   Updated: 2021/10/09 01:55:29 by qdam             ###   ########.fr       */
+/*   Updated: 2023/10/13 17:41:19 by mahautlatin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ void	make_image_from_xpm(void *mlx_ptr, t_img *img, char *xpm)
 	if (img->img)
 		img->addr = mlx_get_data_addr(img->img, &img->bpp,
 				&img->line, &img->end);
+	return ;
 }
 
 void	make_image_blank(void *mlx_ptr, t_img *img, int w, int h)
@@ -32,4 +33,5 @@ void	make_image_blank(void *mlx_ptr, t_img *img, int w, int h)
 				&img->line, &img->end);
 	img->w = w;
 	img->h = h;
+	return ;
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3D.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qdam <qdam@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: mahautlatinis <mahautlatinis@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/21 19:55:53 by qdam              #+#    #+#             */
-/*   Updated: 2021/10/09 01:03:58 by qdam             ###   ########.fr       */
+/*   Updated: 2023/10/13 17:33:53 by mahautlatin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,18 +39,8 @@ int		mlx_destroy_display(void *mlx_ptr);
 
 # endif
 
-/*	==== MISC FUNCTIONS ==== */
-
-// Return the size of an array of pointers
-size_t	array_size(void **arr);
-
-// Return the length of the longest string in the linked list
 int		max_list_str_len(t_list *lst);
-
-// Deallocate a NULL-terminated array of strings
-void	free_tab(char **tab);
-
-// Display an error message then exit the program with exit code 1
+size_t	array_size(void **arr);
 void	error_then_exit(char *fname, char *msg);
-
+void	free_tab(char **tab);
 #endif

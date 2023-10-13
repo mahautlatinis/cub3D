@@ -6,7 +6,7 @@
 /*   By: mahautlatinis <mahautlatinis@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/25 09:30:09 by qdam              #+#    #+#             */
-/*   Updated: 2023/10/03 22:17:11 by mahautlatin      ###   ########.fr       */
+/*   Updated: 2023/10/13 17:42:07 by mahautlatin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 # define CUB3D_ERRORS_H
 
 /*	==== LAUNCH MESSAGES ==== */
-# define ARG_ERROR		"Must have a .cub file as argument"
-# define NAME_ERROR		"A .cub file is required"
-# define READ_ERROR		"\033[0;31mFile cannot be opened or is empty\033[0m"
-# define UNKN_ERROR		"Unknown error"
+# define ARG_ERROR		        "Must have a .cub file as argument"
+# define NAME_ERROR		        "A .cub file is required"
+# define READ_ERROR		        "\033[0;31mFile cannot be opened or is empty\033[0m"
+# define UNKN_ERROR		        "Unknown error"
 
 /*	==== PARSER MESSAGES ==== */
 # define PARSER_XPM_EXT			"All texture files must have XPM extension"
@@ -33,17 +33,17 @@
 # define PARSER_TEXTURE_LINE	"Texture line error or direction already set"
 
 /*	==== MALLOC MESSAGES ==== */
-# define MALLOC_SPLIT	"Malloc error during split"
-# define MALLOC_STRDUP	"Malloc error while parsing cub map (strdup)"
-# define MALLOC_LSTNEW	"Malloc error while parsing cub map (lstnew)"
-# define MALLOC_COLLINE	"Malloc error while parsing color line"
-# define MALLOC_CHARMAP	"Malloc error while creating map in game init"
-# define MALLOC_TEXTURE	"Malloc error while initializing wall textures"
+# define MALLOC_SPLIT	        "Malloc error during split"
+# define MALLOC_STRDUP	        "Malloc error while parsing cub map (strdup)"
+# define MALLOC_LSTNEW	        "Malloc error while parsing cub map (lstnew)"
+# define MALLOC_COLLINE	        "Malloc error while parsing color line"
+# define MALLOC_CHARMAP	        "Malloc error while creating map in game init"
+# define MALLOC_TEXTURE	        "Malloc error while initializing wall textures"
 
 /*	==== CUBMAP MESSAGES ==== */
-# define CUBMAP_NULL	"Map is NULL"
-# define CUBMAP_ROW_INV	"A map row is not valid"
-# define CUBMAP_DEF_DIR	"No default direction found"
+# define CUBMAP_NULL	        "Map is NULL"
+# define CUBMAP_ROW_INV	        "A map row is not valid"
+# define CUBMAP_DEF_DIR	        "No default direction found"
 
 /*	==== GAME AND GRAPHICS MESSAGES ==== */
 # define GRAPHICS_INIT			"MinilibX initialization failed"

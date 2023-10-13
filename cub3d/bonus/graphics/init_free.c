@@ -6,7 +6,7 @@
 /*   By: mahautlatinis <mahautlatinis@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/30 22:54:23 by qdam              #+#    #+#             */
-/*   Updated: 2023/10/03 21:58:27 by mahautlatin      ###   ########.fr       */
+/*   Updated: 2023/10/13 17:19:00 by mahautlatin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ static inline void	hook_events(t_game *game)
 	mlx_hook(game->win, 17, 0L, on_destroy_win, game);
 	mlx_hook(game->win, 02, 1L << 0, on_key_press, game);
 	mlx_hook(game->win, 03, 1L << 1, on_key_release, game);
+	return ;
 }
 
 char	*init_graphics(t_cub_data *cub, t_game *game)
@@ -73,4 +74,5 @@ void	destroy_graphics(t_game *game)
 		mlx_destroy_display(game->ptr);
 		free(game->ptr);
 	}
+	return ;
 }
