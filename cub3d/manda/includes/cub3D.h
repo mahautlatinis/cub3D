@@ -6,7 +6,7 @@
 /*   By: mahautlatinis <mahautlatinis@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/21 19:55:53 by qdam              #+#    #+#             */
-/*   Updated: 2023/10/13 17:45:06 by mahautlatin      ###   ########.fr       */
+/*   Updated: 2023/10/13 17:51:04 by mahautlatin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@
 int		mlx_destroy_display(void *mlx_ptr);
 
 /*	==== MISC FUNCTIONS ==== */
-
 
 int		max_list_str_len(t_list *lst);
 size_t	array_size(void **arr);
