@@ -32,7 +32,7 @@
 #  define USING_LINUX	1
 
 # else
-#  include "mlx_mac.h"
+#  include "../../../mlx_mac/mlx.h"
 #  define USING_LINUX	0
 
 int		mlx_destroy_display(void *mlx_ptr);
@@ -43,4 +43,7 @@ int		max_list_str_len(t_list *lst);
 size_t	array_size(void **arr);
 void	error_then_exit(char *fname, char *msg);
 void	free_tab(char **tab);
+void	rect(t_img *img, t_shape shape, int color);
+void	draw_line(t_img *img, t_vector s, t_vector e, double angle);
+void	circle(t_img *img, t_shape s, int color);
 #endif

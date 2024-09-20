@@ -12,6 +12,10 @@
 
 #include "../includes/cub3D.h"
 
+char	*parse_cub_line_texture(t_cub_data *cub, char *line);
+char	*parse_cub_line_color(t_cub_data *cub, char **tab);
+char	*parse_cub_line_map(t_cub_data *cub, char *line);
+
 static inline char	*parse_cub_line(t_cub_data *cub, char *line)
 {
 	char	**tab;

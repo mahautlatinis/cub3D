@@ -77,4 +77,6 @@ char	**make_char_map(t_list *raw_map);
 // Check the map inside CUB file then returns an error message if any, else NULL
 char	*check_cub_map(char **map);
 
+void	rect(t_img *img, t_shape shape, int color);
+
 #endif
