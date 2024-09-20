@@ -12,15 +12,6 @@
 
 #include "libft.h"
 
-#define BUFFER_SIZE 1024
-
-typedef struct s_gnl
-{
-	char	buf[BUFFER_SIZE + 1];
-	char	*cur;
-	bool	done;
-}	t_gnl;
-
 long	read_fd(t_gnl *data, int fd, char *buf)
 {
 	long	br;

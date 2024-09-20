@@ -18,6 +18,15 @@
 # include <string.h>
 # include <stdbool.h>
 
+# define BUFFER_SIZE 1024
+
+typedef struct s_gnl
+{
+	char	buf[BUFFER_SIZE + 1];
+	char	*cur;
+	bool	done;
+}	t_gnl;
+
 typedef unsigned char	t_uchar;
 
 void	*ft_memset(void *dest, int c, size_t len);
